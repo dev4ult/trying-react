@@ -1,0 +1,23 @@
+{
+  "name": "learnreactjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir public --watch",
+    "serve": "lite-server --baseDir public",
+    "start": "npm run build & npm run serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6"
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
