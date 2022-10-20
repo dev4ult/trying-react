@@ -1,31 +1,55 @@
-const root = ReactDOM.createRoot(document.querySelector('#root'));
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-function App() {
-  const [count, setCount] = React.useState(0);
-  const [click, setClick] = React.useState(false);
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-  // trying useEffect
-  React.useEffect(
-    function () {
-      console.log(document.querySelector('.newDiv'));
-    },
-    [click]
-  );
-
+function Navbar() {
   return (
-    <div className="newDiv">
-      <button onClick={setClick.bind(this, true)}>Click me</button>
-      <button onClick={setCount.bind(this, count + 1)}>Tambah</button>
-      <span>Count saat ini {count}</span>
-    </div>
+    <nav className="flex">
+      <h1>Logo.</h1>
+      <ul>
+        <li>Home</li>
+        <li>Pricing</li>
+        <li>Search</li>
+        <li>Login</li>
+      </ul>
+    </nav>
+  );
+}
+
+function Header() {
+  return (
+    <header>
+      <h1>This is header</h1>
+    </header>
+  );
+}
+
+function MainContent() {
+  return (
+    <main>
+      <h2>This is a main content</h2>
+      <p>lorem ipsum awoipjdaoipw jkdaowip jkdoiapwkd oiaw</p>
+      <p>lorem ipsum awoipjdaoipw jkdaowip jkdoiapwkd oiawawoipdj aoiwjd oaiwjdoai wj</p>
+    </main>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>
+      <h1>This is a footer</h1>
+    </footer>
   );
 }
 
 const element = (
-  <main>
-    <h2>Something here</h2>
-    <App />
-  </main>
+  <div>
+    <Navbar />
+    <Header />
+    <MainContent />
+    <Footer />
+  </div>
 );
 
 root.render(element);

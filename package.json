@@ -2,11 +2,11 @@
   "name": "learnreactjs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "build": "babel src --out-dir public --watch",
     "serve": "lite-server --baseDir public",
-    "start": "npm run build & npm run serve"
+    "build": "Webpack .",
+    "start": "webpack-dev-server ."
   },
   "keywords": [],
   "author": "",
@@ -14,10 +14,17 @@
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.19.3",
+    "@babel/plugin-transform-runtime": "^7.19.6",
     "@babel/preset-env": "^7.19.4",
-    "@babel/preset-react": "^7.18.6"
+    "@babel/preset-react": "^7.18.6",
+    "@babel/runtime": "^7.19.4",
+    "babel-loader": "^8.2.5",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "lite-server": "^2.6.1"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
