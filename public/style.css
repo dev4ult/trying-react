@@ -3,3 +3,21 @@
   height: 200px;
   width: 200px;
 }
+
+img {
+  max-width: 100%;
+}
+
+#react-logo {
+  width: 50px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 1rem;
+}
