@@ -1,7 +1,6 @@
 import React from 'react';
 
-// React Component
-function Header() {
+export default function Header() {
   return (
     <header>
       <nav className="flex">
@@ -15,5 +14,3 @@ function Header() {
     </header>
   );
 }
-
-export { Header };
