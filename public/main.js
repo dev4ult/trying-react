@@ -16,17 +16,7 @@
   \********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _boxes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./boxes */ \"./src/boxes.js\");\n\n\n// import Header from './Header';\n// import Main from './Main';\n// import Footer from './Footer';\n\nfunction App() {\n  const [boxEs, setBoxes] = react__WEBPACK_IMPORTED_MODULE_0___default().useState(_boxes__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n  function toggleBtn() {\n    console.log('!');\n  }\n  const boxesElement = boxEs.map(box => {\n    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      key: box.id,\n      \"data-id\": box.id,\n      className: `box ${box.on ? 'on' : 'off'}`,\n      onClick: toggleBtn\n    });\n  });\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"App\"\n  }, boxesElement);\n}\n\n//# sourceURL=webpack://learnreactjs/./src/App.js?");
-
-/***/ }),
-
-/***/ "./src/boxes.js":
-/*!**********************!*\
-  !*** ./src/boxes.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{\n  id: 1,\n  on: true\n}, {\n  id: 2,\n  on: false\n}, {\n  id: 3,\n  on: true\n}, {\n  id: 4,\n  on: true\n}, {\n  id: 5,\n  on: false\n}, {\n  id: 6,\n  on: false\n}]);\n\n//# sourceURL=webpack://learnreactjs/./src/boxes.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\nfunction App() {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    className: \"App\"\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h1\", null, \"Hello World\"));\n}\n\n//# sourceURL=webpack://learnreactjs/./src/App.js?");
 
 /***/ }),
 
