@@ -1,1 +1,15 @@
+.flex {
+  display: flex;
+}
 
+form {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form input,
+form textarea {
+  max-width: 300px;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
