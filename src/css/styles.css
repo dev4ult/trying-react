@@ -8,7 +8,9 @@ form {
 }
 
 form input,
-form textarea {
+form textarea,
+form fieldset,
+form button {
   max-width: 300px;
   font-size: 1.3rem;
   padding: 0.5rem;
