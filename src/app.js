@@ -1,11 +1,9 @@
 import React from 'react';
-import Form from './components/Form';
-import './css/styles.css';
 
 export default function App() {
   return (
     <div className="App">
-      <Form />
+      <h1>Hello World</h1>
     </div>
   );
 }
