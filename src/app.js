@@ -1,18 +1,13 @@
 import React from 'react';
+import WindowTracker from './components/WindowTracker';
 import './css/styles.css';
 
 export default function App() {
-  const [starWarsData, setStarWarsData] = React.useState({});
-
-  React.useEffect(() => {
-    fetch('https://swapi.dev/api/people/1')
-      .then((res) => res.json())
-      .then((data) => setStarWarsData(data));
-  }, []);
+  React.useEffect(() => {}, [window.innerWidth]);
 
   return (
     <div className="App">
-      <pre>{JSON.stringify(starWarsData, null, 2)}</pre>
+      <WindowTracker />
     </div>
   );
 }

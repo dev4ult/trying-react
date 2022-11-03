@@ -6,10 +6,22 @@
 }
 
 .App {
-  display: flex;
-  gap: 4px;
+  height: 100vh;
+  background-color: orange;
 }
 
-button {
+.Child {
+  margin-inline: auto;
+  width: fit-content;
+  color: white;
+}
+
+.Child button {
+  font-size: 1.5rem;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.Child h2 {
   font-size: 2rem;
 }
