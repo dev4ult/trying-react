@@ -3,11 +3,18 @@ import WindowTracker from './components/WindowTracker';
 import './css/styles.css';
 
 export default function App() {
-  React.useEffect(() => {}, [window.innerWidth]);
+  const [show, setShow] = React.useState(true);
+
+  function toggleShow() {
+    setShow((prevShow) => !prevShow);
+  }
 
   return (
     <div className="App">
-      <WindowTracker />
+      <button type="button" onClick={toggleShow}>
+        Toggle WindowTracker
+      </button>
+      {show && <WindowTracker />}
     </div>
   );
 }

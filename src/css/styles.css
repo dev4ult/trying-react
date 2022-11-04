@@ -16,7 +16,9 @@
   color: white;
 }
 
-.Child button {
+button {
+  display: block;
+  margin-inline: auto;
   font-size: 1.5rem;
   padding: 0.7rem;
   margin-bottom: 1rem;
